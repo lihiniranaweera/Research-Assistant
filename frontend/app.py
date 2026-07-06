@@ -6,6 +6,11 @@ import uuid
 
 import requests
 import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# ── Config ────────────────────────────────────────────────────────────────────
 
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 API_KEY = os.getenv("API_KEY", "dev-secret")

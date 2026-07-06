@@ -13,10 +13,10 @@ class Settings(BaseSettings):
     embedding_model: str = "text-embedding-3-small"
 
     data_dir: str = "data/collections"
-    chunk_size: int = 1000
-    chunk_overlap: int = 200
+    chunk_size: int = 400
+    chunk_overlap: int = 80
 
-    max_retrieval_docs: int = 6
+    max_retrieval_docs: int = 12
     agent_max_iterations: int = 10
 
 
